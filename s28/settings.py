@@ -121,8 +121,10 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
 STATIC_URL = '/static/'
-#自己的短信模板
-SMS = 0
+#sms
+APPID = 1400400266  # 自己应用ID
+APPKEY = "ae5b34d41d621d965dc9aa310c29fe9f"  # 自己应用Key
+SMS_SIGN = "干货老学长"  # 自己腾讯云创建签名时填写的签名内容（使用公众号的话这个值一般是公众号全称或简称）
 try:
     from .local_settings import *
 except ImportError:
